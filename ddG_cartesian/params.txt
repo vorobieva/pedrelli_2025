@@ -1,0 +1,32 @@
+#####################
+## Required params ##
+#####################
+pdb_name = 'TMB2_17.pdb'
+mut = ['M8', 'V12']
+aa_list = ['A','C','D']
+path_to_Rosetta_main = ''
+
+#####################
+## Optional params ##
+## all vars have   ##
+## default values  ##
+#####################
+
+###     Hydra run params
+email = '' #could be filled in case of the notification receipt wish upon completion of calculations
+sbatch_array_length = 100
+
+###     rosetta relax coords params
+ntraj = 20
+nstruct = 2
+name_relax_xml = ''
+
+###     rosetta ddG calculations params
+ddg_iterations = 3
+force_iterations = False
+ddg_score_cutoff = 1.0
+ddg_dump_pdbs = False
+ddg_bbnbrs = 1
+fa_max_dis = 9.0
+score_weights = 'ref2015_cart.wts'
+
